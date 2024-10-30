@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Steven Jessup
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\normalsize #1} & \normalsize #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\normalsize #1} & \normalsize #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \vspace{2pt}
+    \textbf{\Huge \scshape Steven Jessup} \\ \vspace{1pt}
+    \vspace{3pt}
+    \small 209-302-5813 $|$ \href{mailto:me@stevenjessup.com}{me@stevenjessup.com} $|$
+    \href{https://linkedin.com/in/jessupsteven}{linkedin.com/in/jessupsteven} $|$
+    \href{https://github.com/jessupthefish}{github.com/jessupthefish}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \vspace{2pt}
+    \resumeSubheading
+      {Code Ninjas $|$ Center Director}{July 2023 -- April 2024}
+      \resumeItemListStart
+        \resumeItem{Instructed students in programming languages such as JavaScript, Python, and C\#, focusing on building foundational skills in coding and problem-solving.}
+        \resumeItem{Led and taught game modding clubs, including Minecraft and Roblox, helping students create custom game content while learning coding principles and problem-solving skills.}
+        \resumeItem{Designed and implemented a dynamic coding curriculum tailored to various learning styles and experience levels, resulting in improved student engagement and comprehension.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {US Navy $|$ Fire Controlman First Class}{July 2013 -- Aug. 2021}
+
+      \resumeSubSubheading
+        {Commander, Naval Forces Japan}{}
+        \resumeItemListStart
+        \resumeItem{Utilized the Global Command and Control System - Maritime (GCCS-M) to manage critical information and communications in support of operational planning and decision-making.}
+        \resumeItem{Collaborated with higher echelons and the Japan Maritime Self-Defense Force to deliver accurate and timely intelligence products.}
+        \resumeItemListEnd
+
+      \resumeSubSubheading
+        {Surface Development Squadron One}{}
+        \resumeItemListStart
+          \resumeItem{Delivered IT support and maintained over 1,000 NMCI accounts via the NMCI Enterprise Tools Database.}
+          \resumeItem{Resolved high-priority network and hardware issues, ensuring uninterrupted operations across multiple naval units and commands.}
+        \resumeItemListEnd
+
+      \resumeSubSubheading
+        {Commander, Seventh Fleet}{}
+        \resumeItemListStart
+          \resumeItem{Led a team of 20 in planning and executing 106 multinational Tomahawk strike missions through the Mission Distribution System (MDS) for creation, distribution, and execution. Earned the highest assessed tactical proficiency for two consecutive years.}
+          \resumeItem{Troubleshot and maintained classified data links via SHF SATCOM to ensure secure communication.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{VG Archive} $|$ \emph{C++, Python, SQLite, SQL, CMake}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a video game archive application using C++ and SQLite, providing efficient data handling and management.}
+            \resumeItem{Designed a relational database schema to store detailed game information, including titles, genres, release dates, and user ratings.}
+            \resumeItem{Built a user-friendly command-line interface (CLI) for seamless record management, allowing users to add, search, update, and delete games.}
+            \resumeItem{Automated data enrichment by integrating a Python-based API for real-time game data scraping, streamlining the addition of new titles and enhancing existing records.}
+            \resumeItem{Crafted SQL queries for dynamic filtering by genre, platform, and user rating, enabling highly customized search results.}
+             \resumeItem{Optimized CRUD operations to support smooth data retrieval and updates, ensuring a responsive and scalable archive system.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Java, Python, JavaScript, HTML/CSS, LaTeX} \\
+     \textbf{Platforms \& Tools}{: Linux, Windows, Mac, Git, GitHub, CMake, VS Code} \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEducationHeading
+      {California State University, East Bay}{Expected Graduation: May 2026}
+      {Bachelor of Science in Computer Science}{Hayward, CA}
+    \resumeEducationHeading {\small College of San Mateo}{May 2024} {Associate of Science in Computer Science}{San Mateo, CA} \resumeSubHeadingListEnd
+\end{document}
